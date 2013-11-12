@@ -1,0 +1,252 @@
+% PDF erzeugen:
+% xelatex $datei
+% 
+% HTML erzeugen:
+% ????
+
+
+\documentclass[a4paper,parskip=half,numbers=noenddot]{scrartcl}  
+
+\usepackage[ngerman]{babel}
+\usepackage{a4wide}
+\usepackage[T1]{fontenc}
+%\usepackage[juratotoc,ref=parlong,ref=nosentence]{scrjura}
+\usepackage[juratotoc,ref=parlong]{scrjura}
+\usepackage{fontspec}% provides font selecting commands 
+\usepackage{xunicode}% provides unicode character macros 
+\usepackage{xltxtra} % provides some fixes/extras
+%\usepackage{tocstyle}
+
+%\usetocstyle{KOMAlike}
+
+%\setmainfont[Mapping=tex-text]{Adobe Garamond Pro}
+
+%%Nehmen wir mal ne Standard-Schrift...
+%%%\setsansfont[Mapping=tex-text]{Myriad Pro}
+
+\usepackage{geometry}
+\geometry{left=26mm, right=25mm, top=23mm, bottom=33mm}
+
+%\hypersetup{
+%    pdftitle={Satzung der Studierendenschaft (am Karlsruher Institut für Technologie)},
+%    pdfauthor={Studierendenschaft am Karlsruher Institut für Technologie},
+%    linkbordercolor={0 0 .8}
+%}
+
+\renewcommand{\thesection}{\alph{section})}
+
+\renewcommand*{\thecontractSubParagraph}{%
+{\theParagraph\,\alph{contractSubParagraph})}}    % setzt einen kleinen Abstand \, zwischen Zahl und Buchstabe bei Paragraphen; ist so gewünscht
+
+\renewcommand{\numberline}[1]{\makebox[2.5em][l]{#1}}
+
+\usepackage{hyperref}
+
+
+\title{Fachschaftsordnung der Fachschaft Physik\\(am Karlsruher Institut für Technologie)}
+\author{Version 0.1}
+\date{Stand: \today}
+
+
+\begin{document}
+
+\pagestyle{empty}
+\maketitle
+\newpage 
+\rule{0mm}{0mm} \newpage % Für Printversion
+
+%\section*{Präambel:}
+
+\begin{contract}
+\setcounter{page}{1}
+\pagestyle{plain}
+\tableofcontents
+\newpage
+
+
+
+Die Fachschaft Physik ist Teil der Verfassten Studierendenschaft am Karlsruher Institut für Technologie (KIT). Diese Fachschaftsordnung richtet sich nach der Organisationssatzung der Verfassten Studierendenschaft am KIT und dem Landeshochschulgesetz (LHG). Aus Gründen der besseren Lesbarkeit ausschließlich die männliche Form verwendet. Dabei ist jede andere Form impliziert. Die Geschlechtsdefinition obliegt jeder Person selbst.
+
+%
+% Fachschaft
+%
+
+%\parnumberfalse 
+%\section{Die Fachschaft}
+%\parnumbertrue
+
+\Paragraph{title=Die Fachschaft}
+
+Alle an der Fakultät für Physik eingeschriebenen Studierenden 
+bilden nach  §~65~a (4)~LHG und Organisationssatzung §~28 die Fachschaft Physik.
+
+\Paragraph{ title = Aufgaben}\label{studierendenschaft:aufgaben}
+
+Die Fachschaft und ihre Organe hat folgende Aufgaben überparteilich wahrzunehmen:
+
+\begin{enumerate}
+\item die Vertretung der studentischen Interessen insbesondere gegenüber dem KIT und der Fakultät für Physik,
+\item die Förderung aller Studienangelegenheiten,
+ ßitem die Studienberatung der Studierenden an der Fakultät für Physik,
+\item soziale Beratung der Studierenden,
+\item die Mitarbeit in den Gremien der Fakultät für Physik, insbesondere die Mitarbeit an der Gestaltung der Studiengänge, Studien- und Prüfungsordnungen und der Studienbedingungen,
+\item die Wahrnehmung der hochschulpolitischen, fachlichen und fachübergreifenden sowie der sozialen, wirtschaftlichen und kulturellen Belange der Studierenden,
+\item die Mitwirkung an den Aufgaben des KIT nach §§~2~bis~7~LHG i.~V.~m. §~20~KITG,
+\item die Förderung der Gleichstellung und den Abbau von Benachteiligungen innerhalb der Studierendenschaft,
+\item die Förderung der sportlichen und musischen Aktivitäten der Studierenden,
+\item die Pflege und der Ausbau der überregionalen und internationalen Studierendenbeziehungen,
+\item die Information ihrer Mitglieder und der Wissenstransfer innerhalb der Fachschaft,
+\item die Ausrichtung kultureller Veranstaltungen,
+\item die Vernetzung innerhalb der Studierendenschaft, insbesondere Teilnahme an der Fachschaftenkonferenz (FSK).
+
+\end{enumerate}
+
+
+%
+% FACHSCHAFTEN
+%
+
+%\parnumberfalse \section{Fachschaften} \parnumbertrue
+
+\Paragraph{title=Organe der Fachschaft}
+
+Organe der Fachschaft sind
+
+  \begin{enumerate}
+  \item die Fachschaftsversammlung,
+  \item die Fachschaftssitzung,
+  \item der Fachschaftsvorstand,
+  \item die Fachschaftssprecher.
+  \end{enumerate}
+\Paragraph{title=Fachschaftsversammlung}\label{fachschaft:vv}
+
+Die Fachschaftsversammlung ist das beschließende Organ der Fachschaft.
+
+Jedes Fachschaftsmitglied ist auf der Fachschaftsversammlung stimm- und antragsberechtigt.
+
+Die Fachschaftsversammlung wird mindestens einmal pro Semester sowie auf Antrag von mindestens 5 \% der Fachschaftsmitglieder vom Fachschaftsvorstand einberufen. Bei der Einberufung muss eine Tagesordnung vorgeschlagen werden.
+
+Der Vorstand schlägt eine Redeleitung vor, die von der Versammlung bestätigt wird.
+
+Die Fachschaftsversammlung soll an einem Vorlesungstag stattfinden. 
+
+Die Fachschaftsversammlung muss mindestens 7 Tage im Voraus durch Aushang angekündigt werden.
+
+Aufgaben: \label{fachschaft:vv:kompetenzen}
+  \begin{enumerate}
+  \item Beschluss und Änderung der Fachschaftsordnung,
+  \item Genehmigung des Haushaltsplans der Fachschaft, 
+  \item Einsetzen des Wahlleiters, \label{fachschaft:vv:wahlleiter}
+  \item Bestätigung der Vertreter in der FSK,
+  \item Beschluss einer Neuwahl des Fachschaftsvorstands gemäß \refPar{fachschaft:vv:wahl}. \label{fachschaft:vv:kompetenzen:abwahl}
+ 
+  \end{enumerate}
+
+Alle weiteren Aufgaben und Beschlüsse können von der Fachschaftssitzung übernommen werden. Beschlüsse der Fachschaftsversammlung heben widersprechende Beschlüsse der Fachschaftssitzung auf.
+
+Die Fachschaftsversammlung kann mit 10~\% aller Stimmen und Zweidrittel der abgegebenen Stimmen be\-schlie\-ßen, eine Neuwahl des Fach\-schaftsvor\-stands zu veranlassen\label{fachschaft:vv:wahl}.
+
+Das Protokoll muss innerhalb von 2 Wochen, öffentlich und von der Sitzungsleitung unterschrieben ausgehängt werden. 
+
+\Paragraph{title=Fachschaftssitzung}\label{fs:sitzung}
+
+Die Fachschaftssitzung entscheidet über alle Angelegenheiten der Fachschaft im Rahmen der von der Fachschaftsversammlung beschlossenen Vorgaben. 
+
+Sie soll in der Vorlesungszeit wöchentlich stattfinden.
+
+Die Fachschaftssitzung wird mit einer Frist von drei Werktagen vom Fachschaftsvorstand per Aushang einberufen.
+
+Die Fachschaftssitzung ist öffentlich. Alle Anwesenden haben Rederecht.
+
+Alle Fachschaftsmitglieder haben Stimm- und Antragsrecht.
+
+Die Fachschaftssitzung ist beschlussfähig, wenn mindestens sechs Mitglieder anwesend sind.
+
+Zu Beginn wird eine Redeleitung bestimmt. Im Falle von Uneinigkeit wird diese mit einfacher Mehrheit gewählt.
+
+Die Fachschaftssitzung beschließt mit relativer Mehrheit. 
+
+Das Protokoll wird von der Fachschaftssitzung auf der nächsten Sitzung bestätigt und soll bis zu deren Ende veröffentlicht werden.
+
+Die Fachschaftssitzung empfiehlt dem Vorstand Vertreter für die Fachschaftenkonferenz sowie das beratende Mitglied im Fakultätsrat.
+
+
+\Paragraph{title=Fachschaftsvorstand}\label{fs:vorstand}
+
+Der Fachschaftsvorstand ist das ausführende Organ der Fachschaft
+
+Der Fachschaftsvorstand besteht aus den Fachschaftssprechern und den studentischen Fakultätsratsmitgliedern.
+
+Aufgaben
+\begin{enumerate}
+\item Einberufung der Fachschaftsversammlungen und Fachschaftssitzungen,
+\item Wahl eines Fachschaftsmitgliedes, das mit beratender Stimme an den Sitzungen des Fakultätsrates teilnimmt,
+\item Verantwortung für die Umsetzung von Beschlüssen tragen,
+\item als Ansprechpartner die Beschlüsse und Meinungen der Fachschaft kommunizieren.
+\end{enumerate}
+ 
+Der Vorstand entsendet mindestens einen Vertreter in die FSK. Diese müssen von der Fachschaftsversammlung bestätigt werden.
+
+Der Vorstand beschließt und wählt mit absoluter Mehrheit der Vorstandsmitglieder.
+
+Der Vorstand ist der Fachschaftsversammlung und der Fachschaftssitzung rechenschaftspflichtig.
+
+
+%
+% Beschluss FSK: bis 1000 Studis 2 FS-Sprecher, dann je angefangener 500 Studis einer mehr
+%
+
+\Paragraph{title=Fachschaftssprecher}\label{fs:sprecher}
+
+Die Fachschaftssprecher sind die fünf Vertreter mit den meisten Stimmen bei der Wahl nach §~~30~(2) der Organisationssatzung.
+
+Ein Fachschaftssprecher scheidet aus dem Amt
+  \begin{enumerate}
+  \item am Ende der Amtsperiode,
+  \item durch Exmatrikulation,
+  \item durch eigenen Verzicht,
+  \item bei Wahl eines neuen Vorstandes nach \ref{fachschaft:vv:wahl}.
+\end{enumerate}
+
+Bei Ausscheiden eines Fach\-schaftssprechers rückt der Kandidat mit den nächstmeisten Stimmen nach. Steht kein Kandidat mehr zur Verfügung, bleibt das Amt unbesetzt. Fällt die Anzahl der Fachschaftssprecher unter zwei, ist eine Fachschaftsversammlung von des noch verbleibenden Fachschaftssprechers innerhalb von zwei Wochen in der Vorlesungszeit einzuberufen, um über Neuwahlen zu entscheiden. Ist der Fachschaftsvorstand unbesetzt, so ist vom Ältestenrat eine Fachschaftsversammlung einzuberufen um eine Neuwahl einzuleiten.
+
+
+
+
+
+%
+% Finanzen
+%
+
+%\parnumberfalse \section{Haushalt} \parnumbertrue
+
+\Paragraph{title=Finanzen}
+
+Die Fachschaftssitzung wählt einen Finanzreferent.
+
+Die Amtszeit des Finanzreferent beträgt ein Jahr und beginnt mit der Wahl.
+
+Ein Referent scheidet aus dem Amt
+\begin{enumerate}
+\item am Ende der Amtszeit,
+\item durch Exmatrikulation,
+\item durch eigenen Verzicht,
+\item durch Neuwahl der Finanzreferent.
+\end{enumerate}
+
+Der Finanzreferent regelt die Finanzen der Fachschaft und muss den Finanzausschuss der Studierendenschaft unterstützen.
+
+Der Finanzreferent stellt den Haushaltsplan der Fachschaft auf, der von der Fachschaftsversammlung bestätigt werden muss.
+
+Die Arbeit des Finanzreferenten wird mindestens jährlich von mindestens zwei von der Fachschaftsversammlung gewählten Rechnungsprüfern kontrolliert.
+
+Der Finanzreferent ist der Fachschaftssitzung und der Fachschaftsversammlung rechenschaftspflichtig.
+
+Weiteres regelt die Finanzordnung der Studierendenschaft des KIT.
+
+Mittel der Fachschaft dürfen nur für die satzungsgemäßen Zwecke verwendet werden.
+
+
+
+\end{contract}
+\end{document}
